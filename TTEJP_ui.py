@@ -138,7 +138,7 @@ if os.path.exists(new_urls_file):
         # 将URL列表转换为DataFrame并显示
         url_df = pd.DataFrame(all_urls)
         st.dataframe(
-            url_df,
+            url_df,width=None,use_container_width=True,
             column_config={
                 "url": st.column_config.LinkColumn(
                     "Link"
@@ -171,7 +171,7 @@ if os.path.exists(all_urls_file):
         url_df = pd.DataFrame(all_urls)
 
         st.dataframe(
-            url_df,
+            url_df,width=None,use_container_width=True,
             column_config={
                 "url": st.column_config.LinkColumn(
                     "Link"
